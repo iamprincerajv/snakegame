@@ -91,6 +91,9 @@ const gameEngine = () => {
 
 // Main logic starts here
 window.requestAnimationFrame(main);
+window.addEventListener('load', ()=>{
+    alert("For best response, use Arrow Keys of your keyboard (if using)");
+});
 window.addEventListener('keydown', (e) => {
     inputDir = { x: 0, y: 1 }; // start the game
     moveSound.play();
